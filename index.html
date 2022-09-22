@@ -18,8 +18,18 @@
   <!-- 
     移除文件：
       - 从Git仓库和工作中同时移除对应的文件：git rm -f 文件名  (被移除后的文件的状态是绿D)
-
+      - 只从Git仓库中移除指定的文件，但保留工作区对应的文件
    -->
+   <!-- 
+    Git的基本操作
+      1.  *.a: 忽略所有的 .a 文件   
+      2. !lib.a: 跟踪所有的lib.a,及时你在前忽略了 .a 文件    
+      3. /TODO: 只忽略当前目录下的TODO文件，而不忽略subdir/TODO
+      4. build/ :忽略任何目录下为build的文件夹
+      5. doc/*.txt : 忽略doc/notes.txt,但不忽略doc/server/arch.txt
+      6.doc/**/*.pdf忽略 doc/ 目录及其所有子目录下的.pdf文件
+
+    -->
   <script src="./index.js"></script>
 </body>
 </html>
